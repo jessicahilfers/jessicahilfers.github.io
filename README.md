@@ -1,2 +1,2 @@
-# jessicahilfers.github.io
-Jessica L. Hilfers Personal Web Site
+# NM-food-socal-justice-map
+help with GEOG 485L final project

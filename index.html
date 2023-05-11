@@ -1,250 +1,308 @@
 <!DOCTYPE html>
 <html lang="en">
-<!--Lets see if Github really tracks the changes-->
+
 <head>
-  <title>Jessica Hilfers Personal Website</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-  <link rel="stylesheet" href=".\JS_CSS_Dowloaded_Libraries\Bootstrap3.4.1.css">
-  <link rel="stylesheet" href=".\myCSS_styleFiles\myStyle_Scrollspy_Hilfers.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-  <script src=".\JS_CSS_Dowloaded_Libraries\jQuery3.4.1.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-  <script src=".\JS_CSS_Dowloaded_Libraries\JSBootstrap3.4.1.js"></script>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Food access & social justice in NM</title>
+    <meta charset="UTF-8">
+    <link rel="icon" href="images/icon_webtab.png" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="JS_CSS_downloaded_libraries/dc.css">
+    <link rel="stylesheet" type="text/css" href="JS_CSS_downloaded_libraries/leaflet.css">
+    <link rel="stylesheet" type="text/css" href="JS_CSS_downloaded_libraries/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="JS_CSS_downloaded_libraries/leaflet.markerCluster.css">
+    <link rel="stylesheet" type="text/css" href="JS_CSS_downloaded_libraries/leaflet-legend.css">
+    <link rel="stylesheet" type="text/css" href="JS_CSS_downloaded_libraries/jquery.dataTables.css">
+    <link rel="stylesheet" type="text/css" href="JS_CSS_downloaded_libraries/leaflet-control-minimap.css">
+    <link rel="stylesheet" type="text/css" href="JS_CSS_downloaded_libraries/google_font_Esteban.css">
+    <link rel="stylesheet" type="text/css" href="JS_CSS_downloaded_libraries/L.Control.BetterScale.css">
+    <link rel="stylesheet" type="text/css" href="myCSS_styleFiles/main.css">
+
 </head>
 
 
-<body data-spy="scroll" data-target=".navbar" data-offset="50">
+<body data-spy="scroll" data-target=".navbar" data-offset="100">
 
-
-  <div class="container">
-    <h2><b>Jessica L. Hilfers</b><br><br></h2>
-
-
-
-    <div id="myCarousel" class="carousel slide" data-ride="carousel">
-      <!-- Indicators -->
-      <ol class="carousel-indicators">
-        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-        <li data-target="#myCarousel" data-slide-to="1"></li>
-        <li data-target="#myCarousel" data-slide-to="2"></li>
-        <li data-target="#myCarousel" data-slide-to="3"></li>
-        <li data-target="#myCarousel" data-slide-to="4"></li>
-        <li data-target="#myCarousel" data-slide-to="5"></li>
-        <li data-target="#myCarousel" data-slide-to="6"></li>
-      </ol>
-
-      <!-- Wrapper for slides -->
-      <div class="carousel-inner">
-        <div class="item active">
-          <img src=".\images\Resized_20210220_122622.jpeg" alt="Dwelling"
-            style="width:55%; height:55%">
-          <div class="carousel-caption">
-            <h3>Archaeology</h3>
-          </div>
-        </div>
-
-        <div class="item">
-          <img src=".\images\20230319_160042.jpg" alt="Pictos" style="width:55%; height:55%">
-          <div class="carousel-caption">
-          </div>
-        </div>
-
-        <div class="item">
-          <img src=".\images\20210410_113139.jpg" alt="Fire" style="width:45%; height:10%">
-          <div class="carousel-caption">
-            <h3>Fire And <br> Land Management</h3>
-          </div>
-        </div>
-
-        <div class="item">
-          <img src=".\images\20210624_124138.jpg" alt="Helicopter"
-            style="width:45%; height:55%">
-          <div class="carousel-caption">
-
-          </div>
-        </div>
-
-        <div class="item">
-          <img src=".\images\20210518_103223.jpg" alt="Horse" style="width:45%; height:55%">
-          <div class="carousel-caption">
-
-          </div>
-        </div>
-
-        <div class="item">
-          <img src=".\images\IMG-20220421-WA0011.jpg" alt="Egypt"
-            style="width:65%; height:60%">
-          <div class="carousel-caption">
-            <h3>Travel</h3>
-          </div>
-        </div>
-
-        <div class="item">
-          <img src=".\images\Resized_20220708_121750.jpeg" alt="Hiking"
-            style="width:55%; height:55%">
-          <div class="carousel-caption">
-            <h3>Geography</h3>
-
-          </div>
-        </div>
-
-      </div>
-
-      <!-- Left and right controls -->
-      <a class="left carousel-control" href="#myCarousel" data-slide="prev">
-        <span class="glyphicon glyphicon-chevron-left"></span>
-        <span class="sr-only">Previous</span>
-      </a>
-      <a class="right carousel-control" href="#myCarousel" data-slide="next">
-        <span class="glyphicon glyphicon-chevron-right"></span>
-        <span class="sr-only">Next</span>
-      </a>
-    </div>
-  </div>
-
-  <nav class="navbar navbar-inverse navbar-fixed-top">
     <div class="container-fluid">
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-        <a class="navbar-brand" href="#">Jessica L. Hilfers</a>
-      </div>
-      <div>
-        <div class="collapse navbar-collapse" id="myNavbar">
-          <ul class="nav navbar-nav">
-            <li><a href="#section1">Archaeology</a></li>
-            <li><a href="#section2">Geography</a></li>
-            <li><a href="#section3">Fire and Land Management</a></li>
-            <li><a href="#section4">Professional Experience and Projects</a></li>
-            <li><a href="#section5">MyWebApp</a></li>
-            </li>
-          </ul>
+        <div class="row-title" id="control-row">
+            <div class="col-xs-12 dc-data-count dc-chart" id="data-count">
+
+                <!-- <a id="icon" href="https://geoair.lipingyang.org/" target="_blank"><img src="images/GEE-AI-webApp_icon.jpeg" alt="GeoAIR_icon" style="width:12%;height:5%;"></a> -->
+                <h3 id="main-title" style="font-family: 'Esteban';"><b><i>Food Access & Social Justice in NM </i></b>
+                </h3>
+                <div id="loadingGIF"></div>
+
+                <center>
+
+                    <div class="row">
+                        <!-- About Modal -->
+                        <button type="button" class="btn btn-info" data-toggle="modal"
+                            data-target="#myModal">About</button>
+
+                        <!-- Modal -->
+                        <div class="modal fade" id="myModal" role="dialog">
+                            <div class="modal-dialog">
+
+                                <!-- Modal content-->
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                        <h4 class="modal-title"><b>About</b></h4>
+                                    </div>
+                                    <div class="modal-body">
+                                        <h4><b>Abstract:</h4></b></h4>
+                                        <p>Social justice factors are at the heart of the ongoing modern civil rights
+                                            movement. Food
+                                            justice is an extension of these struggles, where food insecurity,
+                                            malnutrition, and
+                                            lack of access disproportionately affect social classes otherwise suffering
+                                            from
+                                            parallel disadvantages. 48 million Americans are lacking consistent access
+                                            to
+                                            nutritionally sufficient foods, roughly half of whom live in food deserts
+                                            devoid of
+                                            fresh grocery options. Our map aims to bring attention to these disparities.
+                                        </p>
+                                        <h4><b>Categories of Burdens:</h4></b></h4>
+                                        <p>The Justice 40 Initiative determines 8 categories of burdens with 36 total
+                                            nested
+                                            criteria. The categories are climate change, health, energy, housing,
+                                            transportation, legacy pollution, water, and employment and education. To
+                                            learn more about these criteria, visit <a
+                                                href="https://screeningtool.geoplatform.gov/en/methodology"
+                                                target="_blank">the CEJST website</a>.</p>
+
+                                        <h4><b>About the team:</h4></b></h4>
+                                        <p><a href="http://cj-allen-git.github.io" target="_blank">C.J. Allen</a>, UNM
+                                            Student</p>
+                                        <p><a href="jessicahilfers.github.io " target="_blank">Jessica Hilfers</a>, UNM
+                                            Student</p>
+                                        <h4><b>Project advisors:</h4></b></h4>
+                                        <p><a href="http://www.lipingyang.org" target="_blank">Dr. Liping Yang</a>, UNM
+                                            Professor
+                                        </p>
+                                        <p><a href="https://sarigai-geoair.github.io/" target="_blank">Sarigai
+                                                Sarigai</a>, UNM GeoAIR Lab</p>
+                                        </p>
+                                        <p><u>Data Sources:</u></p>
+                                        <ul>
+                                            <li>Justice40: <a
+                                                    href="https://screeningtool.geoplatform.gov/en/methodology"
+                                                    target="_blank">CEJST</a></li>
+                                            <li>Census Tracts: <a href="google.com" target="_blank">CABQ</a></li>
+                                            <li>Food Access: <a
+                                                    href="https://www.ers.usda.gov/data-products/food-access-research-atlas/"
+                                                    target="_blank">USDA</a></li>
+                                        </ul>
+                                        <p><u>Code Examples Referenced:</u></p>
+                                        <ul>
+                                            <li>This app was built primarily using the <a href="https://leafletjs.com/"
+                                                    target="_blank">Leaflet.js</a> and <a href="https://d3js.org/"
+                                                    target="_blank">D3.js</a> JavaScript libraries.</li>
+                                            <li>The About button is based on the <a
+                                                    href="https://www.w3schools.com/bootstrap/bootstrap_modal.asp"
+                                                    target="_blank">Bootstrap Modal Reference.</a></li>
+                                            <li> Charts based on <a
+                                                    href="https://geoair-lab.github.io/iLit4GEE-AI-WebApp/index.html"
+                                                    target="_blank">GeoAIR research lab</a> example.</li>
+                                        </ul>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-default"
+                                            data-dismiss="modal">Close</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+                        <button type="button" class="btn btn-info" data-toggle="modal"
+                            data-target="#myDemoModal">How-To</button>
+
+                        <!-- Modal -->
+                        <div class="modal fade" id="myDemoModal" role="dialog">
+                            <div class="modal-dialog">
+
+                                <!-- Modal content-->
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                        <h4 class="modal-title"><b>How to Use This Map</b></h4>
+                                    </div>
+                                    <div class="modal-body">
+                                        <br> To make selections and view relevant data, click on a tract on the map or
+                                        on items in the charts and they will isolate. 
+                                        <br>
+                                        <br>
+                                        Histograms function with a slider,
+                                        so you can isolate a section of the data by clicking and dragging
+                                        across the chart. Use the reset buttons to refresh the data.
+                                        <br>
+                                        <br>In the data sets, 0 represents a negative result, while 1 represents a
+                                        positive or affirmative.
+                                        <br>
+
+                                        </ul>
+
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-default"
+                                            data-dismiss="modal">Close</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                </center>
+
+
+                <div class="row" id="count-row">
+                    <div class="col-xs-12 dc-dataTitle-count dc-chart" id="data-count">
+                        <h4>tracts
+                            <small>
+                                <span class="filter-count"></span> selected out of <span class="total-count"></span>
+                                records |
+                                <a id="all" href="javascript:location.reload();">Reset All</a><i style="color: black;">
+                                    (all legends of the donut charts are scrollable and filterable)</i>
+                                </span>
+                            </small>
+
+                        </h4>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
+
+        <div id="section1" class="container-fluid">
+            <div class="row" id="control-row-map">
+                <div class="col-xs-12 col-md-6">
+                    <div class="map" id='map'></div>
+                    <div id='cluster-map-anchor'></div>
+                </div>
+                <div class="col-xs-12 col-md-3 pie-chart">
+                    <h4><br>County <small><a id="county">reset</a></small></h4>
+                    <div class="dc-chart" id="chart-ring-county"></div>
+                    <div style="width:150px; height:120px" id="county-legend" class="dc-html-legend-container"></div>
+                </div>
+                <div class="col-xs-12 col-md-3 pie-chart">
+                    <h4><br>Categories of burdens exceeded <small><a id="county">reset</a></small></h4>
+                    <div class="dc-chart" id="chart-ring-cats"></div>
+                    <div style="width:150px; height:120px" id="cats-legend" class="dc-html-legend-container"></div>
+                </div>
+            </div>
+        </div>
+
+        <div id="section2" class="container-fluid">
+            <h2><b>Food Access</b></h2>
+            <div class="col-xs-12 col-md-3 pie-chart">
+                <h4><br>Low Food Access at 1 Mile <small><a id="county">reset</a></small></h4>
+                <div class="dc-chart" id="chart-ring-food"></div>
+                <div style="width:150px; height:120px" id="food-legend" class="dc-html-legend-container"></div>
+            </div>
+            <div class="col-xs-12 col-md-3 pie-chart">
+                <h4><br>Low Food Access at 10 Miles <small><a id="county">reset</a></small></h4>
+                <div class="dc-chart" id="chart-ring-food10"></div>
+                <div style="width:150px; height:120px" id="food10-legend" class="dc-html-legend-container"></div>
+            </div>
+            <div class="col-xs-12 col-md-3 pie-chart">
+                <h4><br>Low Food Access at 20 Miles <small><a id="county">reset</a></small></h4>
+                <div class="dc-chart" id="chart-ring-food20"></div>
+                <div style="width:150px; height:120px" id="food20-legend" class="dc-html-legend-container"></div>
+            </div>
+            <div class="col-xs-12 col-md-3 pie-chart">
+                <h4><br>Low Food Access at 1/2 Mile and Low Vehicle Access <small><a id="county">reset</a></small></h4>
+                <div class="dc-chart" id="chart-ring-foodVeh"></div>
+                <div style="width:150px; height:120px" id="foodVeh-legend" class="dc-html-legend-container"></div>
+            </div>
+        </div>
+        <p><br></p>
+        <p><br></p>
+        <p><br></p>
+        <!-- <div id="section3" class="container-fluid">
+            <h2><b>Race demographics</b></h2>
+            <div class="col-xs-12 col-md-3 pie-chart">
+                <h4><br>Percent Black Population <small><a id="Black">reset</a></small></h4>-->
+        <div class="dc-chart" id="chart-ring-Black"></div>
+        <!--<div style="width:400px; height:120px" id="Black-legend" class="dc-html-legend-container">
+                </div>
+                <div class="col-xs-12 col-md-3 pie-chart">
+                    <h4><br>Percent Hispanic Population <small><a id="Hisp">reset</a></small></h4>-->
+        <div class="dc-chart" id="chart-ring-Hisp"></div>
+        <!-- <div style="width:400px; height:120px" id="Hisp-legend" class="dc-html-legend-container">
+                    </div>
+                    </div>
+                </div>
+            </div>-->
+
+        <p><br></p>
+        <p><br></p>
+        <!--  <div id="section4" class="container-fluid">
+                <h2><b>Income demographics</b></h2>
+                <div class="col-xs-12 col-md-3 pie-chart">
+                    <h4><br>Federal Poverty Rate <small><a id="lowIncome">reset</a></small></h4>-->
+        <center>
+            <div class="dc-chart" id="chart-ring-lowIncome"></div>
+            <p><br></p>
+            <div class="dc-chart" id="chart-ring-snap"></div>
+        </center>
+        <!-- <div style="width:1500px; height:120px" id="lowIncome-legend" class="dc-html-legend-container">
+                    </div>
+                </div>
+
+            </div>-->
     </div>
-  </nav>
 
-
-  <div id="section1" class="container-fluid">
-    <h1>Archaeology</h1>
-    <p style="float:right;">
-      <img src=".\images\20220313_115330.jpg" alt="Moon House"
-        style="width:450px; height:350px">
-    <h4>&nbsp;&nbsp;&nbsp;<u>Education</u></h4>
-    <p>&nbsp;&nbsp;&nbsp;&nbsp;Currently pursuing a BS in Anthropology with a concentration in Archaeology.</p>
-
-    <h4>&nbsp;&nbsp;&nbsp;<u>Work Experience</u></h4>
-    <ul>
-      <li><i>Student Archaeological Assistant</i> at the University of New Mexico: data management for research related
-        to the
-        Betatakin and Keet Seel Cliff Dwellings.</li>
-      <li><i>Archaeological Collections Volunteer</i> at Western New Mexico University museum.</li>
-      <li><i>Archaeological Field Technician</i> with the United States Forest Service, San Isabel National Forest,
-        Salida, Colorado</li>
-    </ul>
-    <h4>&nbsp;&nbsp;&nbsp;<u>Classes</u></h4>
-    <ul>
-      <li>Introduction to Archaeology and Archaeology in Practice Laboratory</li>
-      <li>Cultural and Physical Anthropology</li>
-      <li>Cultural Resource Management</li>
-      <li>Human Behavioral Ecology</li>
-      <li>Strategy of Archaeology</li>
-      <li>Southwest Archaeology</li>
-    </ul>
-
-  </div>
-
-  <div id="section2" class="container-fluid">
-    <h1>Geography</h1>
-    <p style="float:left;">
-      <img src=".\images\20230331_105507.jpg" alt="Spatial" style="width:350px; height:350px">
-    <h4>&nbsp;&nbsp;&nbsp;<u>Education</u></h4>
-    <p>&nbsp;&nbsp;&nbsp;&nbsp;Currently pursuing a BS in Geography with a focus in GIScience.</p>
-    <h4>&nbsp;&nbsp;&nbsp;<u>Technical Experience</u></h4>
-
-    <P>&nbsp;&nbsp;&nbsp;&nbsp;Experience with ArcMap, ArcGIS Pro, Collector for ArcMap, and ENVI </P>
-    <p>&nbsp;&nbsp;&nbsp;&nbsp;Proficient with handheld GPS, Avenza, Gaia, and other mobile mapping and collection
-      interfaces.</p>
-    <h4>&nbsp;&nbsp;&nbsp;<u>Work Experience</u></h4>
-    <p>&nbsp;&nbsp;&nbsp;&nbsp;Planning Department Intern at the Mid-Region Council of Governments, Albuquerque,
-      New Mexico</p>
-    <h4>&nbsp;&nbsp;&nbsp;<u>Classes</u></h4>
-    <p>&nbsp;&nbsp;&nbsp;&nbsp;Maps and GIScience and Laboratory</p>
-    <p>&nbsp;&nbsp;&nbsp;&nbsp;Introduction to Geographic Information Systems</p>
-    <p>&nbsp;&nbsp;&nbsp;&nbsp;Applications of Remote Sensing</p>
-    <p>&nbsp;&nbsp;&nbsp;&nbsp;Internet Web Mapping</p>
-  </div>
-  </div>
-
-
-
-
-  <div id="section3" class="container-fluid">
-    <h1>Fire and Land Management</h1>
-    <p style="float:right;">
-      <img src=".\images\20160918_170127.jpg" alt="Spatial" style="width:450px; height:350px">
-    <h4>&nbsp;&nbsp;&nbsp;<u>Work Experience</u></h4>
-    <p>&nbsp;&nbsp;&nbsp;&nbsp;United States Forest Service (15 seasons)</p>
-    <ul>
-      <li>Gila National Forest: Mimbres, New Mexico</li>
-      <li>Gila National Forest: Silver City, New Mexico</li>
-      <li>Malheur National Forest: John Day, Oregon</li>
-      <li>Santa Fe National Forest: Jemez Springs, New Mexico</li>
-      <li>Humboldt- Toiyabe National Forest: Las Vegas, Nevada</li>
-      <li>Sumter National Forest: Edgefield, South Carolina</li>
-      <li>Pike National Forest: Lake George, Colorado</li>
-    </ul>
-    <p>&nbsp;&nbsp;&nbsp;&nbsp;Jemez Springs Volunteer Fire Department</p>
-    <p>&nbsp;&nbsp;&nbsp;&nbsp;Manitou Springs Fire Department</p>
-    <p>&nbsp;&nbsp;&nbsp;&nbsp;Victor Volunteer Fire Department</p>
-    <br>
-    <p>Vast experience in wildland fire and land management, structure fire, and emergency medicine.</p>
-
-
-
-
-  </div>
-
-  <div id="section4" class="container-fluid">
-    <h1>Professional Experience and Projects</h1>
-    <p style="float:left;">
-      <img src=".\images\20210905_125301.jpg" alt="Spatial" style="width:450px; height:320px">
-      <!--<h4>&nbsp;&nbsp;&nbsp;<u>Hobbies</u></h4>
-      <p>&nbsp;&nbsp;&nbsp;&nbsp;Hiking</p>
-      <p>&nbsp;&nbsp;&nbsp;&nbsp;Backpacking</p>
-      <p>&nbsp;&nbsp;&nbsp;&nbsp;Travel</p>
-      <p>&nbsp;&nbsp;&nbsp;&nbsp;Good Books</p>
-      <br>
-      <h4>&nbsp;&nbsp;&nbsp;Ask me for recommendations!</h4>-->
-    <h4>&nbsp;&nbsp;&nbsp;<u>Resumes</u></h4>
-    <h4>&nbsp;&nbsp;&nbsp;<a href=".\images\Hilfers_Resume2023_Short.docx"
-        &nbsp;&nbsp;&nbsp;&nbsp;>Jessica Hilfers Resume</a></h4>
-    <h4>&nbsp;&nbsp;&nbsp;<a href=".\images\Hilfers_Fire_resume.docx"
-        &nbsp;&nbsp;&nbsp;&nbsp;>Federal/ Fire Management Resume</a></h4>
-    <br>
-    <h4>&nbsp;&nbsp;&nbsp;<u>Check out some of my projects!</u></h4>
-
-    <h4>&nbsp;&nbsp;&nbsp<a href="https://arcg.is/Pu9Sf" &nbsp;&nbsp;&nbsp;&nbsp;>Changes in Mobility, Population, and
-        Land Use</a></h4>
-    <h4>&nbsp;&nbsp;&nbsp;<a href="https://arcg.is/1zKWiu" &nbsp;&nbsp;&nbsp;&nbsp;>The Land of Entrapment!</a></h4>
-    <br>
-    <h4>&nbsp;&nbsp;&nbsp;<u>Contact Me:</u></h4>
-    <h4>&nbsp;&nbsp;&nbsp;<a href="mailto:jhilfers17@unm.edu">Jessica L. Hilfers</a></h4>
-    <h4>&nbsp;&nbsp;&nbsp;Cell: 505-288-1840</h4>
-    </div>
+    <p><br></p>
 
     <div id="section5" class="container-fluid">
-      <h1><center>MyWebApp</center></h1> 
-      <p style="float:right;"></p>
-      <h4><center><u>COMING SOON!</u></center></h4>
-      <br>
-      <p><center>An interactive web map that will illustrate social justice factors in the state of New Mexico. </center></p>
+        <div class="row" id="control-row">
+            <div class="col-xs-12">
+                <div>
+                    <div class="dc-dataTable-count">
+                        <b><span class="filter-count"></span> selected out of <span class="total-count"></span>
+                            records</b>
+                    </div>
+                </div>
+                <table id="data-table" class="table table-hover dc-data-table">
+                </table>
+            </div>
+
+            <div class="row" id="control-row">
+                <div class="col-xs-12">
+                    <table id="data-table" class="table table-hover dc-data-table">
+                    </table>
+                </div>
+            </div>
+        </div>
     </div>
+    </div>
+    <script type="text/javascript" src="JS_CSS_downloaded_libraries/d3v5.16.0.js"></script>
+    <script type="text/javascript" src="JS_CSS_downloaded_libraries/crossfilterv1.5.4.js"></script>
+    <script type="text/javascript" src="JS_CSS_downloaded_libraries/dc4.2.0.js"></script>
+    <script type="text/javascript" src="JS_CSS_downloaded_libraries/Leafletv1.6.0.js"></script>
+    <script type="text/javascript" src="JS_CSS_downloaded_libraries/colorbrewer.js"></script>
+    <script type="text/javascript" src="JS_CSS_downloaded_libraries/underscore-min.js"></script>
+    <script type="text/javascript" src="JS_CSS_downloaded_libraries/jQuery.js"></script>
+    <script type="text/javascript" src="JS_CSS_downloaded_libraries/Bootstrap.js"></script>
+    <script type="text/javascript" src="JS_CSS_downloaded_libraries/leaflet.markerCluster.js"></script>
+    <script type="text/javascript" src="JS_CSS_downloaded_libraries/dc.leafletv0.5.5.js"></script>
+    <!-- <script type="text/javascript" src="JS_CSS_downloaded_libraries/dc.leaflet.js"></script> -->
+    <script type="text/javascript" src="JS_CSS_downloaded_libraries/jquery.dataTables.js"></script>
+    <script type="text/javascript" src="JS_CSS_downloaded_libraries/dc.datatables.js"></script>
+    <script type="text/javascript" src="JS_CSS_downloaded_libraries/leaflet-osm.js"></script>
+    <script type="text/javascript" src="JS_CSS_downloaded_libraries/Control.MiniMap.js"></script>
+    <script type="text/javascript" src="JS_CSS_downloaded_libraries/L.Control.BetterScale.js"></script>
+    <script type="text/javascript" src="JS_CSS_downloaded_libraries/colorbrewer.js"></script>
+    <script type="text/javascript" src="data/NewMexico10.js"></script>
+    <script type="text/javascript" src="myJS_scripts/main.js"></script>
+
+
+    <script>
+        jQuery('#loadingGIF').fadeOut(3 * 1000);
+    </script>
+
+
+
 </body>
 
 </html>
